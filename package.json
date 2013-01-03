@@ -1,0 +1,28 @@
+{
+  "name": "all",
+  "version": "0.0.0",
+  "description": "resolve an array of promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/then/all.git"
+  },
+  "keywords": [
+    "promise",
+    "a+",
+    "promises",
+    "all"
+  ],
+  "author": "ForbesLindesay",
+  "license": "MIT",
+  "dependencies": {
+    "is-promise": "~1.0.0",
+    "promise": "~1.2.2"
+  },
+  "devDependencies": {
+    "better-assert": "~0.1.0"
+  }
+}

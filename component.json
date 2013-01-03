@@ -1,0 +1,17 @@
+{
+  "name": "all",
+  "repo": "then/all",
+  "description": "Resolve an array of promises",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "then/is-promise": "*",
+    "then/promise": "*",
+    "yields/isArray": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}

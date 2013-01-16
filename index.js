@@ -19,6 +19,7 @@ function all() {
 function _all(arr) {
   return new Promise(function (resolver) {
     var remaining = arr.length;
+    if (remaining === 0) return resolver.fulfill([]);
     var result = new Array(arr.length);
     function res(i, val) {
       if (isPromise(val)) {

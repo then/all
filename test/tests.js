@@ -1,4 +1,3 @@
-
 function load(browser, server) {
   var i = 0;
   while (i < arguments.length) {
@@ -50,6 +49,17 @@ var rejection = {};
 var rejected = new Promise(function (resolver) { resolver.reject(rejection); });
 
 describe('an array', function () {
+  describe('that is empty', function () {
+    it('returns a promise for an empty array', function (done) {
+      var res = all([]);
+      assert(isPromise(res));
+      res.then(function (res) {
+        assert(isArray(res));
+        assert(res.length === 0);
+      })
+      .nodeify(done);
+    });
+  });
   describe('of objects', function () {
     it('returns a promise for the array', function (done) {
       var res = all([a, b, c]);

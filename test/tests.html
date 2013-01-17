@@ -12,7 +12,16 @@
     <script>mocha.setup('bdd')</script>
     <script src="tests.js"></script>
     <script>
-      mocha.run();
+      window.testsPassed = null;
+      function handleResults(runner) {
+        runner.on('fail', function(test, err){
+          window.testsPassed = false;
+        });
+        runner.on('end', function(){
+          window.testsPassed = window.testsPassed == null;
+        });
+      }
+      handleResults(mocha.run());
     </script>
   </body>
 </html>

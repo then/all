@@ -21,6 +21,7 @@
           window.testsPassed = window.testsPassed == null;
         });
       }
+      mocha.globals(['navigator', 'getInterface']);
       handleResults(mocha.run());
     </script>
   </body>

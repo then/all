@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/then/all.png?branch=master)](https://travis-ci.org/then/all)
-<a href="http://promises-aplus.github.com/promises-spec"><img src="http://promises-aplus.github.com/promises-spec/assets/logo-small.png" align="right" />
-# all
+<a href="https://jepso-ci.com/then/all"><img src="https://jepso-ci.com/then/all.svg" align="right" alt="jepso-ci status" /></a>
+# ![then](http://promises-aplus.github.com/promises-spec/assets/logo-small.png)/all
 
   Wait for multiple promises to be resolved
 

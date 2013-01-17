@@ -2,7 +2,7 @@
   "name": "all",
   "repo": "then/all",
   "description": "Resolve an array of promises",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [],
   "dependencies": {
     "then/is-promise": "*",

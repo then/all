@@ -20,7 +20,7 @@ function worseAssert(v) {
 }
 var assert = load('better-assert', worseAssert);
 
-var all = load('all', '../');
+var all = load(window.all, 'all', '../');
 var Promise = load('promise', 'then-promise');
 Promise.prototype.nodeify = nodeify;
 function nodeify(cb) {

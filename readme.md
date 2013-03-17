@@ -33,3 +33,5 @@ all([get('foo'), get('bar')])
 ## License
 
   MIT
+
+![viewcount](https://viewcount.jepso.com/count/then/all.png)

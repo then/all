@@ -20,7 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "is-promise": "~1.0.0",
-    "promise": "~1.2.2"
+    "promise": "~2.0.0"
   },
   "devDependencies": {
     "better-assert": "~0.1.0",

@@ -37,8 +37,8 @@ var b = {};
 var c = {};
 
 function prom(val) {
-  return new Promise(function (resolver) {
-    resolver.fulfill(val);
+  return new Promise(function (resolve) {
+    resolve(val);
   });
 }
 var A = prom(a);
@@ -46,7 +46,7 @@ var B = prom(b);
 var C = prom(c);
 
 var rejection = {};
-var rejected = new Promise(function (resolver) { resolver.reject(rejection); });
+var rejected = new Promise(function (resolve, reject) { reject(rejection); });
 
 describe('an array', function () {
   describe('that is empty', function () {
@@ -181,8 +181,8 @@ describe('single argument', function () {
   });
   describe('which is a promise for an array', function () {
     it('returns a promise for an array containing the fulfilled values of the original array', function (done) {
-      var res = new Promise(function (resolver) {
-        resolver.fulfill([A, b, C]);
+      var res = new Promise(function (resolve) {
+        resolve([A, b, C]);
       });
       res = all(res);
       assert(isPromise(res));

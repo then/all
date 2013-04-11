@@ -17,17 +17,17 @@ function all() {
 }
 
 function _all(arr) {
-  return new Promise(function (resolver) {
+  return new Promise(function (resolve, reject) {
     var remaining = arr.length;
-    if (remaining === 0) return resolver.fulfill([]);
+    if (remaining === 0) return resolve([]);
     var result = new Array(arr.length);
     function res(i, val) {
       if (isPromise(val)) {
-          val.then(function (val) { res(i, val); }, resolver.reject);
+          val.then(function (val) { res(i, val); }, reject);
       } else {
         result[i] = val;
         if (--remaining === 0) {
-          resolver.fulfill(result);
+          resolve(result);
         }
       }
     }

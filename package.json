@@ -1,6 +1,6 @@
 {
   "name": "then-all",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "resolve an array of promises",
   "main": "index.js",
   "scripts": {
@@ -19,11 +19,11 @@
   "author": "ForbesLindesay",
   "license": "MIT",
   "dependencies": {
-    "is-promise": "~1.0.0",
-    "promise": "~2.0.0"
+    "is-promise": "~1.0",
+    "promise": "~2.0"
   },
   "devDependencies": {
-    "better-assert": "~0.1.0",
-    "mocha": "~1.7.4"
+    "better-assert": "~1.0",
+    "mocha": "~1.9"
   }
 }
